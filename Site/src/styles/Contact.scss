@@ -1,0 +1,131 @@
+#contactContainer{
+    background-color: #464646;
+    padding: 1% 8% 20% 8%;
+    
+
+    #contactTitle{
+        font-size: 1.5em;
+        font-size: 6.5vw;
+        text-align: left;
+        margin-bottom: 5%;
+        
+        color: white;
+    }
+
+    #contactGrid{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "phone"
+        "email"
+        "github"
+        "linkedIn";
+
+        grid-row-gap: 7%;
+
+        #phoneContainer{
+            position: relative;
+            grid-area: phone;
+            
+            
+        }
+
+        #emailContainer{
+            grid-area: email;
+            position: relative;
+           
+
+        }
+
+        #githubContainer{
+            grid-area: github;
+            position: relative;
+            
+        }
+
+        #linkedInContainer{
+            grid-area: linkedIn;
+            position: relative;
+        }
+
+
+    }
+
+
+
+}
+
+#phoneImg{
+    width: auto;
+    height: 50px;
+    height: 14vw;
+    float: left;
+}
+
+#phone{
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1.5em;
+    font-size: 5vw;
+}
+
+#emailImg{
+    width: auto;
+    height: 50px;
+    height: 14vw;
+    float: left;
+}
+
+#email{
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1.5em;
+    font-size: 5vw;
+}
+
+
+
+#githubImg{
+    width: auto;
+    height: 50px;
+    height: 14vw;
+    float: left;
+}
+
+#github{
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1.5em;
+    font-size: 5vw;
+}
+
+#linkedInImg{
+    width: auto;
+    height: 50px;
+    height: 14vw;
+    float: left;
+}
+
+#linkedIn{
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1.5em;
+    font-size: 5vw;
+}

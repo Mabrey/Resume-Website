@@ -1,0 +1,115 @@
+#skillsContainer{
+    //padding: 5%;
+    //margin-top: -5%;
+    background-color: #0D8CC4;
+
+    #skillsTransition{
+        padding: 0;
+        margin: -2% -1%;
+        max-height: 100%;
+        width: 100%;
+    }
+
+    #innerSkillsContainer{
+        padding: 0 5% 5% 5%;
+
+        #skillsHeader{
+            font-size: 1.5em;
+            font-size: 6.5vw;
+            text-align: left;
+            position: relative;
+            left: 3%;
+            margin-bottom: 2%;
+            color: white;
+        }
+
+        #skillsGrid{
+            //padding: 0 5%;
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 3fr;
+            grid-template-areas: 
+            "jsImg jsDesc"
+            "webTechImg webTechDesc"
+            "langImg langDesc";
+            
+            width: 100%;
+            height: fit-content;
+                                
+            #jsImg{
+                align-self: center;
+                justify-self: center;
+                grid-area: jsImg;
+                margin-right: 10%;
+                width: 70%;
+                height: auto;
+                
+            }
+
+            #jsDesc{
+                font-family: Microsoft YaHei UI;
+                font-size: .95em;
+                font-size: 4.2vw;
+                grid-area: jsDesc;
+                text-align: left;
+                padding: 0;
+                margin: 2% 0;
+                line-height: 130%;
+                color: white;
+            }
+
+            #webTechImg{
+                align-self: center;
+                justify-self: center;
+                grid-area: webTechImg;
+                margin: 0;
+                margin-right: 10%;
+                width: 70%;
+                height: auto;
+                
+            }
+
+            #webTechDesc{
+                font-family: Microsoft YaHei UI;
+                font-size: .95em;
+                font-size: 4.2vw;
+                grid-area: webTechDesc;
+                text-align: left;
+                padding: 0;
+                margin: 2% 0;
+                line-height: 130%;
+                color: white;
+                
+            }
+
+            #langImg{
+                align-self: center;
+                justify-self: center;
+                margin: 0;
+                grid-area: langImg;
+                margin-right: 10%;
+                width: 70%;
+                height: auto;
+
+            }
+
+            #langDesc{
+                font-family: Microsoft YaHei UI;
+                font-size: .95em;
+                font-size: 4.2vw;
+                grid-area: langDesc;
+                text-align: left;
+                padding: 0;
+                margin: 2% 0;
+                line-height: 130%;
+                color: white;
+            }
+        }
+
+        .desc{
+            font-family: Microsoft YaHei UI;
+            font-size: 1em;
+            line-height: 130%;
+            text-align: left;
+        }
+    }
+}

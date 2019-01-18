@@ -1,0 +1,31 @@
+#headerDiv{
+    display: grid;
+    grid-template: auto / auto auto auto;
+    background: #fff9e4 70%;
+    width: 100%;
+    height: auto;
+    
+    
+
+    #headerName{
+        font-size: x-large;
+        font-size: 6.5vw;
+        margin: auto 0;
+        justify-self: left;
+        padding: 5% 10%;
+    }
+
+    #hamburgerMenu{
+        align-self: center;
+        justify-self: center;
+        //width: fit-content;
+        //height: fit-content;
+        //font-family: Arial, Helvetica, sans-serif;
+        grid-column: 3;
+        background: none;
+        border: none;
+        font-size: x-large;
+        font-size: 6.5vw;
+        padding: 10% 10%;
+    }
+}

@@ -1,0 +1,37 @@
+#openerContainer{
+    //display: block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #66C3FF;
+
+    #myImage {
+        padding: 0;
+        margin: 0;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    #openingMessage{
+        padding: 2% 5%;
+        //background: #FFFBEC;
+        font-family: Microsoft YaHei UI;
+        font-size: 1.2em;
+        font-size: 5.2vw;
+        text-align: left;
+        margin: 10px;
+    }
+
+    #openMessageBG{
+        padding-bottom: 10%;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+        background-color: #FFFBEC;
+        width: 100%;
+        height: auto;
+        //position: relative;
+        top: -10%;
+        z-index: -1;
+    }
+    
+}
+
