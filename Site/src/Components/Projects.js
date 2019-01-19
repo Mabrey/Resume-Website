@@ -19,15 +19,15 @@ class Header extends Component {
                 <div id='innerProjContainer'>
                     <p id = 'projectHeader'>Projects</p>
                     <div id = 'projGrid'>
-                        <button id = "eventSched">
+                        <a id = "eventSched" href="https://github.com/Mabrey/Scheduler">
                             <img id = 'eventSchedImg' src= {this.state.eventSchedImg} alt = {'Event Scheduler'}/>
                             <p id = 'eventTitle'>Event Scheduler</p>
                             <p className = "workInProgress" id = "eventWIP">Work In Progress</p>
-                        </button>
-                        <button id = "houseKeep">
+                        </a>
+                        <a id = "houseKeep" href="https://github.com/Mabrey/HouseKeep">
                             <img id = 'houseKeepImg' src= {this.state.houseKeepImg} alt = {'HouseKeep App'}/>
                             <p id = 'houseKeepTitle'>HouseKeep</p>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

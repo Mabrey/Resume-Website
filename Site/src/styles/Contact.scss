@@ -3,7 +3,7 @@
     padding: 1% 8% 20% 8%;
     
 
-    #contactTitle{
+    #contactHeader{
         font-size: 1.5em;
         font-size: 6.5vw;
         text-align: left;
@@ -64,12 +64,15 @@
 }
 
 #phone{
+    font-family: Microsoft YaHei UI;
     position: absolute;
     left: 25%;
     top: 20%;
     margin: 0;
     padding: 0;
     color: white;
+    background: none;
+    border: none;
     font-size: 1.5em;
     font-size: 5vw;
 }
@@ -82,6 +85,7 @@
 }
 
 #email{
+    font-family: Microsoft YaHei UI;
     position: absolute;
     left: 25%;
     top: 20%;
@@ -95,6 +99,7 @@
 
 
 #githubImg{
+    
     width: auto;
     height: 50px;
     height: 14vw;
@@ -102,6 +107,7 @@
 }
 
 #github{
+    font-family: Microsoft YaHei UI;
     position: absolute;
     left: 25%;
     top: 20%;
@@ -110,6 +116,7 @@
     color: white;
     font-size: 1.5em;
     font-size: 5vw;
+    text-decoration: none;
 }
 
 #linkedInImg{
@@ -120,6 +127,7 @@
 }
 
 #linkedIn{
+    font-family: Microsoft YaHei UI;
     position: absolute;
     left: 25%;
     top: 20%;
@@ -128,4 +136,5 @@
     color: white;
     font-size: 1.5em;
     font-size: 5vw;
+    text-decoration: none;
 }

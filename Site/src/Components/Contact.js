@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import '../styles/Contact.scss'
+import React, { Component } from 'react';
+import '../styles/Contact.scss';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 class Header extends Component {
 
@@ -14,28 +15,51 @@ class Header extends Component {
             github: 'Mabrey',
             linkedInImg: require('../Media/images/linkedInImg.png'),
             linkedIn: 'matthew-abrey',
+            paperclipImg: require('../Media/images/paperclipImg.svg'),
         }
+        
     }
+
+    // copyPhoneToClipboard(){
+    //     let copyText = document.getElementById('phone');
+    //     copyText.select();
+    //     document.execCommand("copy");
+    //     alert("Copied to clipboard!");
+    // }
+
     render(){
         return(
             <div id ='contactContainer'>
-                <p id = 'contactTitle'>Contact</p>
+                <p id = 'contactHeader'>Contact</p>
                 <div id = 'contactGrid'>
                     <div id ='phoneContainer'>
                         <img id = 'phoneImg' src= {this.state.phoneImg} alt = {'phone'}/>
-                        <p id = 'phone'>{this.state.phoneNum}</p>
+                        <CopyToClipboard 
+                            text = {this.state.phoneNum}
+                            onCopy = {() => alert("Copied to clipboard")}
+                            >
+                            <button id = 'phone'>{this.state.phoneNum}</button>
+                        </CopyToClipboard>
+                        
+            
                     </div>
                     <div id ='emailContainer'>
                         <img id = 'emailImg' src= {this.state.emailImg} alt = {'email'}/>
-                        <p id = 'email'>{this.state.email}</p>
+                        <CopyToClipboard 
+                            text = {this.state.email}
+                            onCopy = {() => alert("Copied to clipboard")}
+                            >
+                            <p id = 'email'>{this.state.email}</p>
+                        </CopyToClipboard>
+                        
                     </div>
                     <div id ='githubContainer'>
                         <img id = 'githubImg' src= {this.state.githubImg} alt = {'github'}/>
-                        <span id = 'github'>{this.state.github}</span>
+                        <a id = 'github' href="https://github.com/Mabrey">{this.state.github}</a>
                     </div>
                     <div id ='linkedInContainer'>
                         <img id = 'linkedInImg' src= {this.state.linkedInImg} alt = {'linkedIn'}/>
-                        <span id = 'linkedIn'>{this.state.linkedIn}</span>
+                        <a id = 'linkedIn' href="https://www.linkedin.com/in/matthew-abrey/">{this.state.linkedIn}</a>
                     </div>
 
                 </div>

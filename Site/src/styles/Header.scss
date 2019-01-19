@@ -1,31 +1,78 @@
+html{
+    scroll-behavior: smooth;
+}
+
 #headerDiv{
-    display: grid;
-    grid-template: auto / auto auto auto;
+    // display: grid;
+    // grid-template: auto / auto auto auto;
+    display: inline-block;
     background: #fff9e4 70%;
     width: 100%;
     height: auto;
     
-    
+    #headerSideScrollMenu{
+        width: 75%;
+        overflow: hidden;
+        padding: 5%;
+        display: inline-block;
 
-    #headerName{
-        font-size: x-large;
-        font-size: 6.5vw;
-        margin: auto 0;
-        justify-self: left;
-        padding: 5% 10%;
+        #headerName{
+            // position: absolute;
+            // right: 10%;
+            // top: 40%;
+            
+            float: left;
+            font-family: Microsoft YaHei UI;
+            font-size: x-large;
+            font-size: 6.5vw;
+            margin: auto 0;
+            
+        }
     }
+    
+   
 
     #hamburgerMenu{
-        align-self: center;
-        justify-self: center;
+        //align-self: center;
+        //justify-self: center;
         //width: fit-content;
         //height: fit-content;
         //font-family: Arial, Helvetica, sans-serif;
-        grid-column: 3;
+        // grid-column: 3;
+        margin: auto 0;
         background: none;
         border: none;
         font-size: x-large;
         font-size: 6.5vw;
-        padding: 10% 10%;
+        //padding: 10% 10%;
     }
+}
+
+#menuAbout{
+    text-decoration: none;
+    color: black;
+    padding: 0 3%;
+    font-size: large;
+    font-family: Microsoft YaHei UI;
+}
+#menuSkills{
+    text-decoration: none;
+    color: black;
+    padding: 0 3%;
+    font-size: large;
+    font-family: Microsoft YaHei UI;
+}
+#menuProjects{
+    text-decoration: none;
+    color: black;
+    padding: 0 3%;
+    font-size: large;
+    font-family: Microsoft YaHei UI;
+}
+#menuContact{
+    text-decoration: none;
+    color: black;
+    padding: 0 3%;
+    font-size: large;
+    font-family: Microsoft YaHei UI;
 }
