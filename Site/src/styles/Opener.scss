@@ -35,3 +35,63 @@
     
 }
 
+@media screen and (min-width: 1000px){
+    #openerContainer{
+
+        margin: 0;
+        padding: 0;
+        background-color: #66C3FF;
+    
+        #imageDiv{
+            display: inline-block;
+            position: relative;
+            left: 5%;
+            height: 30vw;
+            width: 30vw;
+            overflow: hidden;
+            border-radius: 50%;
+
+            #myImage {
+                position: relative;
+                height:100%;
+                margin: 0;
+                max-width: none;
+                left: -20%;
+            } 
+        }
+        
+    
+        #openingMessage{
+            display: inline-block;
+            position: relative;
+            padding: 2% 5%;
+            width: 50vw;
+            left: 5%;
+            top: -5%;
+            
+
+
+            //background: #FFFBEC;
+            font-family: Microsoft YaHei UI;
+            font-size: 1.2em;
+            font-size: 3vw;
+            text-align: left;
+            margin: 10px;
+        }
+    
+        #openMessageBG{
+            padding-bottom: 10%;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%);
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%);
+            background-color: #FFFBEC;
+            width: 100%;
+            height: auto;
+            //position: relative;
+            //top: -10%;
+            
+            padding: 1% 0;
+            margin: 0;
+        }
+        
+    }
+}

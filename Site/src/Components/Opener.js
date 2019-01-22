@@ -14,7 +14,10 @@ class Opener extends Component {
         return(
             <div id = 'openerContainer'>
                 <div id = 'openMessageBG'>
-                    <img id = 'myImage' src= {this.state.img} alt = {'Matthew Abrey'}/>
+                    <div id = 'imageDiv'>
+                         <img id = 'myImage' src= {this.state.img} alt = {'Matthew Abrey'}/>
+                    </div>
+                   
                     <p id = 'openingMessage'>{this.state.message}</p>
                 </div>
             </div>
