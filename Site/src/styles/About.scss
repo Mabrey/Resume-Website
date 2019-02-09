@@ -1,99 +1,271 @@
-#aboutContainer{
-    padding: 5%;
-    margin-top: -5%;
-    background-color: #66C3FF;
-    
-    
-    #aboutHeader{
-        font-size: 1.5em;
-        font-size: 6.5vw;
-        text-align: left;
-        position: relative;
-        left: 3%;
-        margin-bottom: 2%;
-    }
 
-    #aboutGrid{
-        display: grid;
-        grid-template: 1fr 1fr / 1fr 3fr;
-        grid-template-areas: 
-        "gradImg gradDesc"
-        "eduImg eduDesc"
-        "projImg projDesc";
+@media screen and (max-width: 999px){
+    #aboutContainer{
+        padding: 5%;
+        margin-top: -5%;
+        background-color: #66C3FF;
         
-        width: 100%;
-        height: fit-content;
-                            
-        #gradImg{
-            align-self: center;
-            justify-self: center;
-            grid-area: gradImg;
-            margin-right: 10%;
-            width: 70%;
-            height: auto;
-        }
-
-        #gradDesc{
-            font-family: Microsoft YaHei UI;
-            font-size: .95em;
-            font-size: 4.2vw;
-            grid-area: gradDesc;
+        
+        #aboutHeader{
+            font-size: 1.5em;
+            font-size: 6.5vw;
             text-align: left;
-            padding: 0;
-            margin: 2% 0;
-            line-height: 130%;
+            position: relative;
+            left: 3%;
+            margin-bottom: 2%;
         }
 
-        #eduImg{
-            align-self: center;
-            justify-self: center;
-            grid-area: eduImg;
-            margin: 0;
-            margin-right: 10%;
-            width: 70%;
-            height: auto;
+        #aboutGrid{
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 3fr;
+            grid-template-areas: 
+            "gradImg gradDesc"
+            "eduImg eduDesc"
+            "projImg projDesc";
             
+            width: 100%;
+            height: fit-content;
+                                
+            #gradImg{
+                align-self: center;
+                justify-self: center;
+                grid-area: gradImg;
+                margin-right: 10%;
+                width: 70%;
+                height: auto;
+            }
+
+            #gradDesc{
+                font-family: Microsoft YaHei UI;
+                font-size: .95em;
+                font-size: 4.2vw;
+                grid-area: gradDesc;
+                text-align: left;
+                padding: 0;
+                margin: 2% 0;
+                line-height: 130%;
+            }
+
+            #eduImg{
+                align-self: center;
+                justify-self: center;
+                grid-area: eduImg;
+                margin: 0;
+                margin-right: 10%;
+                width: 70%;
+                height: auto;
+                
+            }
+
+            #eduDesc{
+                font-family: Microsoft YaHei UI;
+                font-size: .95em;
+                font-size: 4.2vw;
+                grid-area: eduDesc;
+                text-align: left;
+                padding: 0;
+                margin: 2% 0;
+                line-height: 130%;
+                
+            }
+
+            #projImg{
+                align-self: center;
+                justify-self: center;
+                margin: 0;
+                grid-area: projImg;
+                margin-right: 10%;
+                width: 70%;
+                height: auto;
+
+            }
+
+            #projDesc{
+                font-family: Microsoft YaHei UI;
+                font-size: .95em;
+                font-size: 4.2vw;
+                grid-area: projDesc;
+                text-align: left;
+                padding: 0;
+                margin: 2% 0;
+                line-height: 130%;
+            }
         }
 
-        #eduDesc{
+        .desc{
             font-family: Microsoft YaHei UI;
-            font-size: .95em;
-            font-size: 4.2vw;
-            grid-area: eduDesc;
-            text-align: left;
-            padding: 0;
-            margin: 2% 0;
+            font-size: 1em;
             line-height: 130%;
-            
-        }
-
-        #projImg{
-            align-self: center;
-            justify-self: center;
-            margin: 0;
-            grid-area: projImg;
-            margin-right: 10%;
-            width: 70%;
-            height: auto;
-
-        }
-
-        #projDesc{
-            font-family: Microsoft YaHei UI;
-            font-size: .95em;
-            font-size: 4.2vw;
-            grid-area: projDesc;
             text-align: left;
-            padding: 0;
-            margin: 2% 0;
-            line-height: 130%;
         }
     }
+}
+@media screen and (min-width: 999px){
 
-    .desc{
-        font-family: Microsoft YaHei UI;
-        font-size: 1em;
-        line-height: 130%;
-        text-align: left;
+    #aboutContainer{
+        padding: 5% ;
+        padding-bottom: 8%;
+        margin-top: -5%;
+        background-color: #66C3FF;
+        
+        
+        #aboutHeader{
+            font-size: 4.2em;
+            font-size: 3.5vw;
+            text-align: left;
+            position: relative;
+            margin-top: 2%;
+            margin-bottom: 0%;
+            padding-top: 2%
+        }
+
+        #aboutGrid{
+            display: grid;
+            grid-template: 1fr 1fr 1fr/ 4fr 5fr;
+            grid-template-areas: 
+            "aboutMe grad"
+            "aboutMe edu"
+            "aboutMe proj";
+            
+            width: 100%;
+            height: fit-content;
+
+            #aboutMe{
+                padding: 0;
+                padding-right: 15%;
+                grid-area: aboutMe;
+                display: grid;
+                grid-template: 1fr 2fr/ 1fr;
+                grid-template-areas: 
+                "aboutMeImg"
+                "aboutMeDesc";
+
+                #aboutMeImg{
+                    align-self: center;
+                    justify-self: center;
+                    grid-area: aboutMeImg;
+                    //margin-right: 10%;
+                    width: 8.5vw;
+                    height: auto;
+                }
+
+                #aboutMeDesc{
+                    font-family: Microsoft YaHei UI;
+                    font-size: .95em;
+                    font-size: 2.1vw;
+                    grid-area: aboutMeDesc;
+                    text-align: left;
+                    padding: 0;
+                    margin: 2% 0;
+                    line-height: 130%;
+                }
+            }                
+            
+
+
+            #grad{
+
+                grid-area: grad;
+                display: grid;
+                grid-template: 1fr/ 1fr 3fr;
+                grid-template-areas: 
+                "gradImg gradDesc";
+
+                #gradImg{
+                    align-self: center;
+                    justify-self: center;
+                    grid-area: gradImg;
+                    margin-right: 10%;
+                    width: 70%;
+                    width: 8.5vw;
+                    height: auto;
+                }
+
+                #gradDesc{
+                    font-family: Microsoft YaHei UI;
+                    font-size: .95em;
+                    font-size: 2.1vw;
+                    grid-area: gradDesc;
+                    text-align: left;
+                    padding: 0;
+                    margin: 2% 0;
+                    line-height: 130%;
+                    align-self: center;
+                }
+            }
+
+            #edu{
+
+                grid-area: edu;
+                display: grid;
+                grid-template: 1fr/ 1fr 3fr;
+                grid-template-areas: 
+                "eduImg eduDesc";
+
+                #eduImg{
+                    align-self: center;
+                    justify-self: center;
+                    grid-area: eduImg;
+                    margin: 0;
+                    margin-right: 10%;
+                    width: 70%;
+                    width: 8.5vw;
+                    height: auto;
+                    
+                }
+
+                #eduDesc{
+                    font-family: Microsoft YaHei UI;
+                    font-size: .95em;
+                    font-size: 2.1vw;
+                    grid-area: eduDesc;
+                    text-align: left;
+                    padding: 0;
+                    margin: 2% 0;
+                    line-height: 130%;
+                    align-self: center;
+                    
+                }
+            }
+
+            #proj{    
+                grid-area: proj;
+                display: grid;
+                grid-template: 1fr/ 1fr 3fr;
+                grid-template-areas: 
+                "projImg projDesc";
+
+                #projImg{
+                    align-self: center;
+                    justify-self: center;
+                    margin: 0;
+                    grid-area: projImg;
+                    margin-right: 10%;
+                    width: 70%;
+                    width: 8.5vw;
+                    height: auto;
+
+                }
+
+                #projDesc{
+                    font-family: Microsoft YaHei UI;
+                    font-size: .95em;
+                    font-size: 2.1vw;
+                    grid-area: projDesc;
+                    text-align: left;
+                    padding: 0;
+                    margin: 2% 0;
+                    line-height: 130%;
+                    align-self: center;
+                }
+            }
+        }
+
+        .desc{
+            font-family: Microsoft YaHei UI;
+            font-size: 1em;
+            line-height: 130%;
+            text-align: left;
+        }
     }
 }
