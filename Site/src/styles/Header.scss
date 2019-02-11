@@ -80,6 +80,9 @@ html{
         font-family: Microsoft YaHei UI;
     }
     #menuProjects{
+
+        display: none;
+
         text-decoration: none;
         color: black;
         padding: 0 3%;
@@ -116,7 +119,7 @@ html{
             color: #fff9e4;
             position: absolute;
             top: 20%;
-            right: 18%;
+            right: 12%;
         }
     
     
@@ -142,6 +145,8 @@ html{
         font-family: Microsoft YaHei UI;
     }
     #menuProjects{
+        display: none;
+
         text-decoration: none;
         color: #EF626C;
         padding: 3% 5%;

@@ -34,15 +34,15 @@ class Skills extends Component {
                     <div id = 'skillsGrid'>
                         <img id = 'jsImg' src= {this.state.jsImg} alt = {'JavaScript logo'}/>
                         <p id ='jsDesc'>{this.state.jsDesc}</p>
-                        <p id ='jsDescExtend'>{this.state.jsDescExtend}</p>
+                        <p id ='jsDescExtend' className = 'desktop'>{this.state.jsDescExtend}</p>
 
                         <img id = 'webTechImg' src= {this.state.webTechImg} alt = {'web tech img'}/>
                         <p id ='webTechDesc'>{this.state.webTechDesc}</p>
-                        <p id ='webTechDescExtend'>{this.state.webTechDescExtend}</p>
+                        <p id ='webTechDescExtend' className = 'desktop'>{this.state.webTechDescExtend}</p>
                         
                         <img id = 'langImg' src= {this.state.langImg} alt = {'curly brackets'}/>
                         <p id ='langDesc'>{this.state.langDesc}</p>
-                        <p id ='langDescExtend'>{this.state.langDescExtend}</p>
+                        <p id ='langDescExtend' className = 'desktop'>{this.state.langDescExtend}</p>
                     </div>
                 </div>
                 

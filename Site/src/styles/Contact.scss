@@ -164,25 +164,37 @@
             "phone email github linkedIn";
 
             grid-column-gap: 2%;
+            align-items: center;
 
             #phoneContainer{
-                position: relative;
+                //position: relative;
                 grid-area: phone;
+                display: grid;
+                grid-template: 1fr/ auto auto;
             }
 
             #emailContainer{
                 grid-area: email;
-                position: relative;
+                display: grid;
+                grid-template: 1fr/ auto auto;
+                align-items: center;
+                //position: relative;
             }
 
             #githubContainer{
                 grid-area: github;
-                position: relative; 
+                display: grid;
+                grid-template: 1fr/ auto auto;
+                align-items: center;
+                //position: relative; 
             }
 
             #linkedInContainer{
+                display: grid;
+                grid-template: 1fr/ auto auto;
                 grid-area: linkedIn;
-                position: relative;
+                // position: relative;
+                align-items: center;
             }
 
         }
@@ -197,8 +209,6 @@
 
     #phone{
         font-family: Microsoft YaHei UI;
-        position: relative;
-        top: 30%;
         color: white;
         background: none;
         border: none;
@@ -214,7 +224,6 @@
 
     #email{
         font-family: Microsoft YaHei UI;
-        
         color: white;
         background: none;
         border: none;
@@ -223,7 +232,6 @@
     }
 
     #githubImg{
-        
         width: 50%;
         width: 6vw;
         float: left;
@@ -231,8 +239,6 @@
 
     #github{
         font-family: Microsoft YaHei UI;
-        position: relative;
-        top: 30%;
         color: white;
         background: none;
         border: none;
@@ -249,8 +255,6 @@
 
     #linkedIn{
         font-family: Microsoft YaHei UI;
-        position: relative;
-        top: 30%;
         color: white;
         background: none;
         border: none;
