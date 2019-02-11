@@ -18,7 +18,7 @@ class About extends Component {
                     "of programming, including algorithms and data structures.",
             eduImg: require('../Media/images/eduImg.svg'),
             projDesc:"Alongside my formal education, I've been working on " + 
-                    "a couple projects you can find below. If you're interested let me know!",
+                    "a couple projects, including this site. Feel free to check out my stuff on GitHub!",
             projImg: require('../Media/images/projImg.svg'),
 
         }

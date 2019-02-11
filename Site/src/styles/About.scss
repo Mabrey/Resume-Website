@@ -17,78 +17,114 @@
 
         #aboutGrid{
             display: grid;
-            grid-template: 1fr 1fr / 1fr 3fr;
+            grid-template: 1fr 1fr 1fr / 1fr;
             grid-template-areas: 
-            "gradImg gradDesc"
-            "eduImg eduDesc"
-            "projImg projDesc";
+            "grad"
+            "edu"
+            "proj";
             
             width: 100%;
             height: fit-content;
+
+            #aboutMe{
+                display: none;
+            }
                                 
-            #gradImg{
-                align-self: center;
-                justify-self: center;
-                grid-area: gradImg;
-                margin-right: 10%;
-                width: 70%;
-                height: auto;
+            #grad{
+
+                grid-area: grad;
+                display: grid;
+                grid-template: 1fr/ 1fr 3fr;
+                grid-template-areas: 
+                "gradImg gradDesc";
+
+                #gradImg{
+                    align-self: center;
+                    justify-self: center;
+                    grid-area: gradImg;
+                    margin-right: 10%;
+                    width: 70%;
+                    width: 15vw;
+                    height: auto;
+                }
+
+                #gradDesc{
+                    font-family: Microsoft YaHei UI;
+                    font-size: 1em;
+                    font-size: 4.2vw;
+                    grid-area: gradDesc;
+                    text-align: left;
+                    padding: 0;
+                    margin: 2% 0;
+                    line-height: 130%;
+                    align-self: center;
+                }
             }
 
-            #gradDesc{
-                font-family: Microsoft YaHei UI;
-                font-size: .95em;
-                font-size: 4.2vw;
-                grid-area: gradDesc;
-                text-align: left;
-                padding: 0;
-                margin: 2% 0;
-                line-height: 130%;
+            #edu{
+
+                grid-area: edu;
+                display: grid;
+                grid-template: 1fr/ 1fr 3fr;
+                grid-template-areas: 
+                "eduImg eduDesc";
+
+                #eduImg{
+                    align-self: center;
+                    justify-self: center;
+                    grid-area: eduImg;
+                    margin: 0;
+                    margin-right: 10%;
+                    width: 70%;
+                    width: 15vw;
+                    height: auto;
+                    
+                }
+
+                #eduDesc{
+                    font-family: Microsoft YaHei UI;
+                    font-size: 1em;
+                    font-size: 4.2vw;
+                    grid-area: eduDesc;
+                    text-align: left;
+                    padding: 0;
+                    margin: 2% 0;
+                    line-height: 130%;
+                    align-self: center;
+                    
+                }
             }
 
-            #eduImg{
-                align-self: center;
-                justify-self: center;
-                grid-area: eduImg;
-                margin: 0;
-                margin-right: 10%;
-                width: 70%;
-                height: auto;
-                
-            }
+            #proj{    
+                grid-area: proj;
+                display: grid;
+                grid-template: 1fr/ 1fr 3fr;
+                grid-template-areas: 
+                "projImg projDesc";
 
-            #eduDesc{
-                font-family: Microsoft YaHei UI;
-                font-size: .95em;
-                font-size: 4.2vw;
-                grid-area: eduDesc;
-                text-align: left;
-                padding: 0;
-                margin: 2% 0;
-                line-height: 130%;
-                
-            }
+                #projImg{
+                    align-self: center;
+                    justify-self: center;
+                    margin: 0;
+                    grid-area: projImg;
+                    margin-right: 10%;
+                    width: 70%;
+                    width: 15vw;
+                    height: auto;
 
-            #projImg{
-                align-self: center;
-                justify-self: center;
-                margin: 0;
-                grid-area: projImg;
-                margin-right: 10%;
-                width: 70%;
-                height: auto;
+                }
 
-            }
-
-            #projDesc{
-                font-family: Microsoft YaHei UI;
-                font-size: .95em;
-                font-size: 4.2vw;
-                grid-area: projDesc;
-                text-align: left;
-                padding: 0;
-                margin: 2% 0;
-                line-height: 130%;
+                #projDesc{
+                    font-family: Microsoft YaHei UI;
+                    font-size: 1em;
+                    font-size: 4.2vw;
+                    grid-area: projDesc;
+                    text-align: left;
+                    padding: 0;
+                    margin: 2% 0;
+                    line-height: 130%;
+                    align-self: center;
+                }
             }
         }
 
@@ -100,12 +136,12 @@
         }
     }
 }
-@media screen and (min-width: 999px){
+@media screen and (min-width: 1000px){
 
     #aboutContainer{
         padding: 5% ;
         padding-bottom: 8%;
-        margin-top: -5%;
+        margin-top: -4%;
         background-color: #66C3FF;
         
         
@@ -114,7 +150,7 @@
             font-size: 3.5vw;
             text-align: left;
             position: relative;
-            margin-top: 2%;
+            margin-top: 1%;
             margin-bottom: 0%;
             padding-top: 2%
         }
